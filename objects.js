@@ -11,13 +11,9 @@ bouncer(56);
 const me = 'martin';
 console.log(me.length);
 
-// Strings
-
-
-// Objects
 
 const myPerson = {
-    name: '',
+    name: 'Mia',
     age: 18,
     status: ''
 }
@@ -45,6 +41,3 @@ const findEmployeeStatus = (employee) => {
 }
 
 findEmployeeStatus(myPerson);
-
-
-// Arrays
