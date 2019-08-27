@@ -52,20 +52,23 @@ indexAndPrint(randomArr, 2);
 const somePeeps= ['Mandy', 'Janie', 'Tom', 'Ashley'];
 const otherPeeps= ['Callan', 'Michael', 'Greg', "Zoe"];
 
-// const findGreg = (name) => {
-//     for (i = 0; i < name.length; i++){
-//         if (name[i].toLowerCase() === 'greg') {
-//             console.log("It's Greg!");
-//         } else if (i = name.length && name[i].toLowerCase() !== 'greg'){
-//             console.log("no Greg :(")
-//         };
-//     };
-// };
+const findGreg = (name) => {
+    let counter = 1;
+    for (i = 0; i < name.length; i++){
+        if (name[i].toLowerCase() === 'greg') {
+            console.log("It's Greg!");
+        } else if (counter < name.length && name[i].toLowerCase() !== 'greg'){
+            counter++;
+        } else if (counter = name.length && name[i].toLowerCase() !== 'greg'){
+            console.log("no Greg :(");
+        };
+    };
+};
 
-// findGreg(somePeeps);
-// findGreg(otherPeeps);
+findGreg(somePeeps);
+findGreg(otherPeeps);
 
-const findGregBetterSolution = () => {
+const findGregBetterSolution = (name) => {
     if (name.includes('Greg')) {
         console.log("It's Greg!");
     } else {
